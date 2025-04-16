@@ -56,19 +56,20 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(47, 157);
+            pictureBox3.Location = new Point(21, 107);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(174, 165);
+            pictureBox3.Size = new Size(251, 215);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 0;
             pictureBox3.TabStop = false;
             // 
             // txtBoxOne
             // 
+            txtBoxOne.Font = new Font("Segoe UI", 12F);
             txtBoxOne.ForeColor = SystemColors.AppWorkspace;
             txtBoxOne.Location = new Point(360, 178);
             txtBoxOne.Name = "txtBoxOne";
-            txtBoxOne.Size = new Size(353, 31);
+            txtBoxOne.Size = new Size(353, 39);
             txtBoxOne.TabIndex = 1;
             txtBoxOne.Text = "Nome...";
             txtBoxOne.Enter += txtBoxOne_Enter;
@@ -76,30 +77,37 @@
             // 
             // txtBoxTwo
             // 
+            txtBoxTwo.Font = new Font("Segoe UI", 12F);
             txtBoxTwo.ForeColor = SystemColors.AppWorkspace;
             txtBoxTwo.Location = new Point(360, 237);
             txtBoxTwo.Name = "txtBoxTwo";
-            txtBoxTwo.Size = new Size(353, 31);
+            txtBoxTwo.Size = new Size(353, 39);
             txtBoxTwo.TabIndex = 2;
             txtBoxTwo.Text = "Senha...";
+            txtBoxTwo.Enter += txtBoxTwo_Enter;
+            txtBoxTwo.Leave += txtBoxTwo_Leave;
             // 
             // btnVerificar
             // 
-            btnVerificar.Location = new Point(491, 288);
+            btnVerificar.BackColor = Color.CadetBlue;
+            btnVerificar.FlatAppearance.BorderSize = 0;
+            btnVerificar.FlatStyle = FlatStyle.Flat;
+            btnVerificar.Font = new Font("Segoe UI", 9F);
+            btnVerificar.Location = new Point(478, 309);
             btnVerificar.Name = "btnVerificar";
-            btnVerificar.Size = new Size(112, 34);
+            btnVerificar.Size = new Size(130, 40);
             btnVerificar.TabIndex = 3;
             btnVerificar.Text = "Verificar";
-            btnVerificar.UseVisualStyleBackColor = true;
+            btnVerificar.UseVisualStyleBackColor = false;
             btnVerificar.Click += btnVerificar_Click;
             // 
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(456, 348);
+            linkLabel1.Location = new Point(456, 379);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(176, 25);
-            linkLabel1.TabIndex = 4;
+            linkLabel1.TabIndex = 0;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Esqueci minha senha";
             // 

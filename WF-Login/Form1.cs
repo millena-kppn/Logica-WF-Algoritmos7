@@ -9,7 +9,13 @@ namespace WF_Login
 
         private void pictureBoxSair_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            var resposta = MessageBox.Show("Você realmente deseja sair?", "Sair",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question);
+            if (resposta == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void btnVerificar_Click(object sender, EventArgs e)
@@ -37,6 +43,16 @@ namespace WF_Login
                 txtBoxOne.Text = "Nome...";
         }
 
-        
+        private void txtBoxTwo_Enter(object sender, EventArgs e)
+        {
+            if (txtBoxTwo.Text == "Senha...")
+                txtBoxTwo.Text = "";
+        }
+
+        private void txtBoxTwo_Leave(object sender, EventArgs e)
+        {
+            if (txtBoxTwo.Text == "")
+                txtBoxTwo.Text = "Senha...";
+        }
     }
 }
