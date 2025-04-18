@@ -20,10 +20,9 @@ namespace WF_Login
 
         private void btnVerificar_Click(object sender, EventArgs e)
         {
-            txtBoxOne.Text = "Nome cadastrado";
-            txtBoxOne.ForeColor = Color.Green;
-            txtBoxTwo.Text = "Senha aceita";
-            txtBoxTwo.ForeColor = Color.Green;
+            this.Hide(); // Esconde o formulário atual
+            var formPrincipal = new FormPrincipal(); // Cria uma nova instância do formulário principal
+            formPrincipal.Show(); // Mostra o formulário principal
         }
 
         private void pictureBoxMin_Click(object sender, EventArgs e)

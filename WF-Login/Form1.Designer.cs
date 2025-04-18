@@ -65,8 +65,11 @@
             // 
             // txtBoxOne
             // 
+            txtBoxOne.BackColor = Color.SkyBlue;
+            txtBoxOne.BorderStyle = BorderStyle.FixedSingle;
+            txtBoxOne.Enabled = false;
             txtBoxOne.Font = new Font("Segoe UI", 12F);
-            txtBoxOne.ForeColor = SystemColors.AppWorkspace;
+            txtBoxOne.ForeColor = SystemColors.ButtonShadow;
             txtBoxOne.Location = new Point(360, 178);
             txtBoxOne.Name = "txtBoxOne";
             txtBoxOne.Size = new Size(353, 39);
@@ -77,8 +80,10 @@
             // 
             // txtBoxTwo
             // 
+            txtBoxTwo.BackColor = Color.SkyBlue;
+            txtBoxTwo.BorderStyle = BorderStyle.FixedSingle;
             txtBoxTwo.Font = new Font("Segoe UI", 12F);
-            txtBoxTwo.ForeColor = SystemColors.AppWorkspace;
+            txtBoxTwo.ForeColor = SystemColors.ControlDark;
             txtBoxTwo.Location = new Point(360, 237);
             txtBoxTwo.Name = "txtBoxTwo";
             txtBoxTwo.Size = new Size(353, 39);
@@ -147,6 +152,7 @@
             Controls.Add(txtBoxOne);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Formulario";
             Opacity = 0.95D;
             StartPosition = FormStartPosition.CenterScreen;
