@@ -1,6 +1,6 @@
 ﻿namespace WF_Login
 {
-    partial class FormPrincipal
+    partial class FormEntregas : Form
     {
         /// <summary>
         /// Required designer variable.
@@ -33,7 +33,7 @@
             button5 = new Button();
             button4 = new Button();
             button3 = new Button();
-            buttonProdutos = new Button();
+            button2 = new Button();
             button1 = new Button();
             panel2 = new Panel();
             panel3 = new Panel();
@@ -57,7 +57,7 @@
             panel1.Controls.Add(button5);
             panel1.Controls.Add(button4);
             panel1.Controls.Add(button3);
-            panel1.Controls.Add(buttonProdutos);
+            panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
@@ -113,22 +113,21 @@
             button3.TextAlign = ContentAlignment.MiddleRight;
             button3.UseVisualStyleBackColor = true;
             // 
-            // buttonProdutos
+            // button2
             // 
-            buttonProdutos.FlatAppearance.BorderSize = 0;
-            buttonProdutos.FlatStyle = FlatStyle.Flat;
-            buttonProdutos.Font = new Font("Century Gothic", 12F);
-            buttonProdutos.ForeColor = Color.White;
-            buttonProdutos.Image = (Image)resources.GetObject("buttonProdutos.Image");
-            buttonProdutos.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonProdutos.Location = new Point(31, 133);
-            buttonProdutos.Name = "buttonProdutos";
-            buttonProdutos.Size = new Size(176, 42);
-            buttonProdutos.TabIndex = 4;
-            buttonProdutos.Text = "Produtos";
-            buttonProdutos.TextAlign = ContentAlignment.MiddleRight;
-            buttonProdutos.UseVisualStyleBackColor = true;
-            buttonProdutos.Click += buttonProdutos_Click;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Century Gothic", 12F);
+            button2.ForeColor = Color.White;
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.ImageAlign = ContentAlignment.MiddleLeft;
+            button2.Location = new Point(31, 133);
+            button2.Name = "button2";
+            button2.Size = new Size(176, 42);
+            button2.TabIndex = 4;
+            button2.Text = "Produtos";
+            button2.TextAlign = ContentAlignment.MiddleRight;
+            button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -266,6 +265,5 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
-        private Button buttonProdutos;
     }
 }

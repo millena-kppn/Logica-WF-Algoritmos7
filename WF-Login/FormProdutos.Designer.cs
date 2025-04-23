@@ -1,6 +1,6 @@
 ﻿namespace WF_Login
 {
-    partial class FormPrincipal
+    partial class FormProdutos : Form
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProdutos));
             panel1 = new Panel();
             button5 = new Button();
             button4 = new Button();
             button3 = new Button();
-            buttonProdutos = new Button();
+            button2 = new Button();
             button1 = new Button();
             panel2 = new Panel();
             panel3 = new Panel();
@@ -43,6 +43,7 @@
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
+            buttonProdutosVoltar = new Button();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -57,7 +58,7 @@
             panel1.Controls.Add(button5);
             panel1.Controls.Add(button4);
             panel1.Controls.Add(button3);
-            panel1.Controls.Add(buttonProdutos);
+            panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
@@ -75,7 +76,7 @@
             button5.ImageAlign = ContentAlignment.MiddleLeft;
             button5.Location = new Point(31, 248);
             button5.Name = "button5";
-            button5.Size = new Size(176, 42);
+            button5.Size = new Size(176, 34);
             button5.TabIndex = 7;
             button5.Text = "Entregas";
             button5.TextAlign = ContentAlignment.MiddleRight;
@@ -91,7 +92,7 @@
             button4.ImageAlign = ContentAlignment.MiddleLeft;
             button4.Location = new Point(31, 208);
             button4.Name = "button4";
-            button4.Size = new Size(176, 42);
+            button4.Size = new Size(176, 34);
             button4.TabIndex = 6;
             button4.Text = "Pagto";
             button4.TextAlign = ContentAlignment.MiddleRight;
@@ -107,28 +108,27 @@
             button3.ImageAlign = ContentAlignment.MiddleLeft;
             button3.Location = new Point(31, 173);
             button3.Name = "button3";
-            button3.Size = new Size(176, 42);
+            button3.Size = new Size(176, 34);
             button3.TabIndex = 5;
             button3.Text = "Clientes";
             button3.TextAlign = ContentAlignment.MiddleRight;
             button3.UseVisualStyleBackColor = true;
             // 
-            // buttonProdutos
+            // button2
             // 
-            buttonProdutos.FlatAppearance.BorderSize = 0;
-            buttonProdutos.FlatStyle = FlatStyle.Flat;
-            buttonProdutos.Font = new Font("Century Gothic", 12F);
-            buttonProdutos.ForeColor = Color.White;
-            buttonProdutos.Image = (Image)resources.GetObject("buttonProdutos.Image");
-            buttonProdutos.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonProdutos.Location = new Point(31, 133);
-            buttonProdutos.Name = "buttonProdutos";
-            buttonProdutos.Size = new Size(176, 42);
-            buttonProdutos.TabIndex = 4;
-            buttonProdutos.Text = "Produtos";
-            buttonProdutos.TextAlign = ContentAlignment.MiddleRight;
-            buttonProdutos.UseVisualStyleBackColor = true;
-            buttonProdutos.Click += buttonProdutos_Click;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Century Gothic", 12F);
+            button2.ForeColor = Color.White;
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.ImageAlign = ContentAlignment.MiddleLeft;
+            button2.Location = new Point(31, 133);
+            button2.Name = "button2";
+            button2.Size = new Size(176, 34);
+            button2.TabIndex = 4;
+            button2.Text = "Produtos";
+            button2.TextAlign = ContentAlignment.MiddleRight;
+            button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -140,7 +140,7 @@
             button1.ImageAlign = ContentAlignment.MiddleLeft;
             button1.Location = new Point(31, 93);
             button1.Name = "button1";
-            button1.Size = new Size(176, 42);
+            button1.Size = new Size(176, 34);
             button1.TabIndex = 3;
             button1.Text = "Inicio";
             button1.TextAlign = ContentAlignment.MiddleRight;
@@ -222,11 +222,22 @@
             pictureBox4.TabIndex = 6;
             pictureBox4.TabStop = false;
             // 
-            // FormPrincipal
+            // buttonProdutosVoltar
+            // 
+            buttonProdutosVoltar.Location = new Point(677, 406);
+            buttonProdutosVoltar.Name = "buttonProdutosVoltar";
+            buttonProdutosVoltar.Size = new Size(120, 38);
+            buttonProdutosVoltar.TabIndex = 7;
+            buttonProdutosVoltar.Text = "Voltar";
+            buttonProdutosVoltar.UseVisualStyleBackColor = true;
+            buttonProdutosVoltar.Click += buttonProdutosVoltar_Click;
+            // 
+            // FormProdutos
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(buttonProdutosVoltar);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
@@ -236,7 +247,7 @@
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "FormPrincipal";
+            Name = "FormProdutos";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Senac foods";
             panel1.ResumeLayout(false);
@@ -266,6 +277,6 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
-        private Button buttonProdutos;
+        private Button buttonProdutosVoltar;
     }
 }
